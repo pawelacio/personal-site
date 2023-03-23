@@ -1,18 +1,24 @@
+import './globals.css';
+import Header from './header';
+import Footer from './footer';
 
-import './globals.css'
 export const metadata = {
   title: 'Frontend developer | Pawel Kaczmarek',
-  description: 'Frontend developer | Pawel Kaczmarek',
-}
+  description: 'Frontend developer | Pawel Kaczmarek'
+};
 
 export default function RootLayout({
-  children,
+  children
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
-  )
+  );
 }
