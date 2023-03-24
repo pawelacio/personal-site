@@ -15,9 +15,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Header />
-        {children}
-        <Footer />
+        <div className="container mx-auto px-8">
+          <Header />
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   );
