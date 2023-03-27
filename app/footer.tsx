@@ -10,7 +10,10 @@ export default function Footer() {
         <Link className="px-4" href="https://twitter.com/pawikaczmarek">
           Twitter
         </Link>
-        <Link className="px-4" href="www.linkedin.com/in/kaczmarek-pawel">
+        <Link
+          className="px-4"
+          href="https://www.linkedin.com/in/kaczmarek-pawel"
+        >
           Linkedin
         </Link>
         <Link className="px-4" href="https://www.instagram.com/pawikaczmarek/">

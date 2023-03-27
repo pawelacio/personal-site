@@ -78,7 +78,7 @@ export default function Home() {
         </p>
       </section>
       <section id="timeline" className="py-4">
-        <h2 className="text-xl font-bold">Timeline</h2>
+        <h2 className="text-xl font-bold pb-4">Timeline</h2>
         <ul>
           {timeline.map(({ year, description }) => (
             <li key={year} className="py-2">
@@ -91,7 +91,7 @@ export default function Home() {
         </ul>
       </section>
       <section id="skills" className="py-4">
-        <h2 className="text-xl font-bold">Skills</h2>
+        <h2 className="text-xl font-bold pb-4">Skills</h2>
         <ul>
           {skills.map(({ category, skills }) => (
             <li key={category} className="py-2">
