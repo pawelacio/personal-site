@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import mePic from '../public/me-sqr2.JPG';
 
 type TimeLineItemType = {
   year: string;
@@ -63,7 +62,7 @@ export default function Home() {
       <section id="about" className="pb-4">
         <div className="flex flex-row items-center py-4">
           <Image
-            src={mePic}
+            src="/me-sqr2.JPG"
             alt="Me Myself and I"
             width={100}
             height={100}

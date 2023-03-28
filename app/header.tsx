@@ -3,10 +3,14 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
-const CustomLink = ({ children, className, href }) => {
+type CustomLinkProps = {
+  children: string | JSX.Element;
+  className: string;
+  href: string;
+};
+
+const CustomLink = ({ children, className, href }: CustomLinkProps) => {
   const pathname = usePathname();
-  console.log('Pathname: ', pathname);
-  console.log('href: ', href);
 
   return (
     <Link
@@ -28,7 +32,7 @@ export default function Header() {
         <CustomLink className="pl-4" href="/">
           Home
         </CustomLink>
-        <CustomLink className="p;-4" href="/contact">
+        <CustomLink className="pl-4" href="/contact">
           Contact
         </CustomLink>
       </nav>
