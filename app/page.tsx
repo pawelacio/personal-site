@@ -1,3 +1,6 @@
+import Image from 'next/image';
+import mePic from '../public/me-sqr2.JPG';
+
 type TimeLineItemType = {
   year: string;
   description: string;
@@ -57,8 +60,19 @@ const skills: SkillItemType[] = [
 export default function Home() {
   return (
     <main>
-      <section id="about" className="py-4">
-        <h2 className="text-6xl font-bold py-4">Hello I'm Pawel!</h2>
+      <section id="about" className="pb-4">
+        <div className="flex flex-row items-center py-4">
+          <Image
+            src={mePic}
+            alt="Me Myself and I"
+            width={100}
+            height={100}
+            className="block mx-auto h-24 rounded-full sm:mx-0 sm:shrink-0"
+          />
+          <h2 className="text-3xl font-bold pl-4 md:text-6xl">
+            Hello I'm Pawel!
+          </h2>
+        </div>
         <p className="py-1">
           As a passionate frontend developer, I enjoy the art of coding and
           creating innovative new projects. I believe that the key to growth as
