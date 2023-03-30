@@ -21,9 +21,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={roboto.className}>
-        <div className="container mx-auto px-8 sm:px-64">
+        <div className="container h-screen flex flex-col mx-auto px-8 md:px-32 lg:px-64">
           <Header />
-          {children}
+          <div className="flex-grow">{children}</div>
           <Footer />
         </div>
       </body>

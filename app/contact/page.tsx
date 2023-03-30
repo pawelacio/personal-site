@@ -1,3 +1,53 @@
 export default function Contact() {
-  return <div>Contact form will be available soon!</div>;
+  return (
+    <main className="container flex flex-col gap-4 md:py-16 md:flex-row">
+      <h2 className="text-2xl font-bold md:basis-1/2">
+        Let's work together to bring your ideas to life. <br /> Contact me
+        today!
+      </h2>
+      <form
+        name="contact"
+        method="POST"
+        className="basis-1/2 mt-8 md:mt-0"
+        data-netlify="true"
+      >
+        <label className="block mb-4">
+          <span className="block text-sm font-medium text-slate-700">
+            Your Name:
+          </span>
+          <input
+            type="text"
+            name="name"
+            className="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm"
+          />
+        </label>
+        <label className="block mb-4">
+          <span className="block text-sm font-medium text-slate-700">
+            Your Email:
+          </span>
+          <input
+            type="email"
+            name="email"
+            className="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm"
+          />
+        </label>
+        <label className="block mb-4">
+          <span className="block text-sm font-medium text-slate-700">
+            Message:
+          </span>
+          <textarea
+            name="message"
+            rows={5}
+            className="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm"
+          ></textarea>
+        </label>
+        <button
+          type="submit"
+          className="block mx-auto md:mr-0 md:ml-auto mt-1 px-8 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-md"
+        >
+          Send
+        </button>
+      </form>
+    </main>
+  );
 }
