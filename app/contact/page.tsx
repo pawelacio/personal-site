@@ -12,6 +12,7 @@ export default function Contact() {
         className="basis-1/2 mt-8 md:mt-0"
         data-netlify="true"
       >
+        <input type="hidden" name="form-name" value="contact" />
         <label className="block mb-4">
           <span className="block text-sm font-medium text-slate-700">
             Your Name:
