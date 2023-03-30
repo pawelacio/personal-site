@@ -8,6 +8,7 @@ export default function Contact() {
       <form
         name="contact"
         method="POST"
+        action="/success"
         className="basis-1/2 mt-8 md:mt-0"
         data-netlify="true"
       >
