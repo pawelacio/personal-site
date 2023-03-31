@@ -60,7 +60,7 @@ export default function Home() {
   return (
     <main>
       <section id="about" className="pb-4">
-        <div className="flex flex-row items-center py-4">
+        <div className="flex flex-row items-center pb-4">
           <Image
             src="/me-sqr2.JPG"
             alt="Me Myself and I"

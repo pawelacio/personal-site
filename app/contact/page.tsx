@@ -14,38 +14,38 @@ export default function Contact() {
       >
         <input type="hidden" name="form-name" value="contact" />
         <label className="block mb-4">
-          <span className="block text-sm font-medium text-slate-700">
+          <span className="block text-sm font-medium text-slate-700 dark:text-palenight-text">
             Your Name:
           </span>
           <input
             type="text"
             name="name"
-            className="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm"
+            className="mt-1 block w-full px-3 py-2 border rounded-md text-sm shadow-sm bg-white border-slate-300 dark:bg-palenight-background dark:border-palenight-text"
           />
         </label>
         <label className="block mb-4">
-          <span className="block text-sm font-medium text-slate-700">
+          <span className="block text-sm font-medium text-slate-700 dark:text-palenight-text">
             Your Email:
           </span>
           <input
             type="email"
             name="email"
-            className="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm"
+            className="mt-1 block w-full px-3 py-2 border rounded-md text-sm shadow-sm bg-white border-slate-300 dark:bg-palenight-background dark:border-palenight-text"
           />
         </label>
         <label className="block mb-4">
-          <span className="block text-sm font-medium text-slate-700">
+          <span className="block text-sm font-medium text-slate-700 dark:text-palenight-text">
             Message:
           </span>
           <textarea
             name="message"
             rows={5}
-            className="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm"
+            className="mt-1 block w-full px-3 py-2 border rounded-md text-sm shadow-sm bg-white border-slate-300 dark:bg-palenight-background dark:border-palenight-text"
           ></textarea>
         </label>
         <button
           type="submit"
-          className="block mx-auto md:mr-0 md:ml-auto mt-1 px-8 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-md"
+          className="block mx-auto md:mr-0 md:ml-auto mt-1 px-8 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-md dark:bg-palenight-background dark:border-palenight-text"
         >
           Send
         </button>
