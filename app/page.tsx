@@ -109,8 +109,12 @@ export default function Home() {
           {skills.map(({ category, skills }) => (
             <li key={category} className="py-2">
               <div className="flex flex-row flex-nowrap">
-                <div className="font-medium text-gray-400 pr-4">{category}</div>
-                <div>{skills.join(', ')}</div>
+                <div className="font-medium text-gray-400 pr-4 basis-1/2 md:basis-1/3">
+                  {category}
+                </div>
+                <div className="basis-1/2 md:basis-2/3">
+                  {skills.join(', ')}
+                </div>
               </div>
             </li>
           ))}
