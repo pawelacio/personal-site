@@ -29,10 +29,10 @@ export default function Header() {
         Paweł Kaczmarek
       </h1>
       <nav className="flex flex-row-reverse basis-3/4">
-        <CustomLink className="pl-4" href="/">
+        <CustomLink className="px-4" href="/">
           Home
         </CustomLink>
-        <CustomLink className="pl-4" href="/contact">
+        <CustomLink className="px-4" href="/contact">
           Contact
         </CustomLink>
       </nav>

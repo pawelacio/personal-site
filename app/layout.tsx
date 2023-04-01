@@ -20,7 +20,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={roboto.className}>
+      <body
+        className={`${roboto.className} bg-white dark:bg-palenight-contrast`}
+      >
         <div className="container bg-white dark:bg-palenight-contrast dark:text-palenight-text min-h-screen flex flex-col mx-auto px-8 md:px-32 lg:px-64">
           <Header />
           <div className="flex-grow">{children}</div>

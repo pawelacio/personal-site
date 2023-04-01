@@ -13,7 +13,10 @@ module.exports = {
         'palenight-text': ' #676E95',
         'palenight-contrast': ' #202331',
         'palenight-green': ' #c3e88d',
-        'palenight-error': ' #ff5370'
+        'palenight-error': ' #ff5370',
+        'highlight-yellow': '#FFFF00',
+        'highlight-green': '#90EE90',
+        'highlight-blue': '#ADD8E6'
       }
     }
   },

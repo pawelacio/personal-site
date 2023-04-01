@@ -20,7 +20,7 @@ export default function Contact() {
           <input
             type="text"
             name="name"
-            className="mt-1 block w-full px-3 py-2 border rounded-md text-sm shadow-sm bg-white border-slate-300 dark:bg-palenight-background dark:border-palenight-text"
+            className="mt-2 block w-full px-3 py-2 border rounded-md text-sm shadow-sm bg-white border-slate-300 dark:bg-palenight-background dark:border-palenight-text"
           />
         </label>
         <label className="block mb-4">
@@ -30,7 +30,7 @@ export default function Contact() {
           <input
             type="email"
             name="email"
-            className="mt-1 block w-full px-3 py-2 border rounded-md text-sm shadow-sm bg-white border-slate-300 dark:bg-palenight-background dark:border-palenight-text"
+            className="mt-2 block w-full px-3 py-2 border rounded-md text-sm shadow-sm bg-white border-slate-300 dark:bg-palenight-background dark:border-palenight-text"
           />
         </label>
         <label className="block mb-4">
@@ -40,12 +40,12 @@ export default function Contact() {
           <textarea
             name="message"
             rows={5}
-            className="mt-1 block w-full px-3 py-2 border rounded-md text-sm shadow-sm bg-white border-slate-300 dark:bg-palenight-background dark:border-palenight-text"
+            className="mt-2 block w-full px-3 py-2 border rounded-md text-sm shadow-sm bg-white border-slate-300 dark:bg-palenight-background dark:border-palenight-text"
           ></textarea>
         </label>
         <button
           type="submit"
-          className="block mx-auto md:mr-0 md:ml-auto mt-1 px-8 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-md dark:bg-palenight-background dark:border-palenight-text"
+          className="block mx-auto md:mr-0 md:ml-auto mt-2 px-8 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-md dark:bg-palenight-background dark:border-palenight-text"
         >
           Send
         </button>
