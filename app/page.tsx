@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 type TimeLineItemType = {
   year: string;
@@ -8,6 +9,13 @@ type TimeLineItemType = {
 type SkillItemType = {
   category: string;
   skills: string[];
+};
+
+type Project = {
+  name: string;
+  description: string;
+  url?: string;
+  technologies?: string[];
 };
 
 const timeline: TimeLineItemType[] = [
@@ -56,6 +64,22 @@ const skills: SkillItemType[] = [
   }
 ];
 
+const projects: Project[] = [
+  {
+    name: 'mediastore-sdk',
+    description:
+      'React.js component library for building a seamless checkout and account management process with Cleeng solution',
+    url: 'https://github.com/Cleeng/mediastore-sdk',
+    technologies: ['React', 'Typescript', 'styled-components']
+  },
+  {
+    name: 'Covid dashboard',
+    description: 'Simple dashoard created to up to date with covid data',
+    url: 'https://covid-data-dashboard.netlify.app/',
+    technologies: ['React', 'Javascript', 'styled-components', 'd3']
+  }
+];
+
 export default function Home() {
   return (
     <main>
@@ -74,27 +98,20 @@ export default function Home() {
         </div>
         <p className="py-1">
           As a passionate{' '}
-          <span className=" bg-highlight-green rounded-tl-lg">
-            frontend developer
-          </span>
-          , I enjoy the art of coding and creating innovative new projects. I
+          <span className=" bg-highlight-green">frontend developer</span>, I
+          enjoy the art of coding and creating innovative new projects. I
           believe that the key to growth as a developer is to constantly seek
           out new challenges and develop a broad range of skills. That's why, in
           addition to my expertise in frontend development, I have also expanded
           my knowledge to include{' '}
-          <span className=" bg-highlight-green rounded-tl-lg">
-            backend development
-          </span>
-          .
+          <span className=" bg-highlight-green">backend development</span>.
         </p>
         <p className="py-1">
           When I'm not working, I like to explore new ideas in{' '}
-          <span className="bg-highlight-green rounded-tl-lg ">
-            cloud-based solutions
-          </span>
-          , honing my skills and staying up-to-date with the latest trends.
-          Beyond tech, I also have a love for literature and video games, and I
-          make it a priority to take time out of my busy schedule to enjoy these
+          <span className="bg-highlight-green">cloud-based solutions</span>,
+          honing my skills and staying up-to-date with the latest trends. Beyond
+          tech, I also have a love for literature and video games, and I make it
+          a priority to take time out of my busy schedule to enjoy these
           hobbies. Whether I'm immersed in a great book or outside exploring
           nature, I believe that finding balance between work and play is key to
           staying motivated and engaged in all areas of life.
@@ -125,6 +142,34 @@ export default function Home() {
                 <div className="basis-1/2 md:basis-2/3">
                   {skills.join(', ')}
                 </div>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </section>
+      <section id="projects" className="py-4">
+        <h2 className="text-xl font-bold pb-4">Projects</h2>
+        <ul>
+          {projects.map(({ name, description, technologies, url }) => (
+            <li key="category" className="py-2">
+              <div className="flex flex-row flex-nowrap">
+                <div className="font-medium text-gray-400 pr-4 basis-1/3">
+                  {url ? (
+                    <Link href={url} className="underline">
+                      {name}
+                    </Link>
+                  ) : (
+                    <>{name}</>
+                  )}
+                </div>
+                <div className="font-thin text-gray-400 pr-4 basis-1/3">
+                  {description}
+                </div>
+                {technologies && (
+                  <div className="font-thin text-gray-400 pr-4 basis-1/3">
+                    {technologies.join(', ')}
+                  </div>
+                )}
               </div>
             </li>
           ))}
