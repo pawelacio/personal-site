@@ -1,7 +1,7 @@
 export default function Contact() {
   return (
     <main className="container flex flex-col gap-4 md:py-16 md:flex-row">
-      <h2 className="text-2xl font-bold md:basis-1/3">
+      <h2 className="text-xl font-bold mt-2 md:text-2xl md:basis-1/3">
         Let's work <span className=" bg-highlight-green">together</span> to
         bring your ideas to life. <br /> <br />{' '}
         <span className=" bg-highlight-green">Contact me</span> today!
