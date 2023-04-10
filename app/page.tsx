@@ -68,7 +68,7 @@ const projects: Project[] = [
   {
     name: 'mediastore-sdk',
     description:
-      'React.js component library for building a seamless checkout and account management process with Cleeng solution',
+      'Component library for building a seamless checkout and account management process with Cleeng solution',
     url: 'https://github.com/Cleeng/mediastore-sdk',
     technologies: ['React', 'Typescript', 'styled-components']
   },
@@ -162,14 +162,15 @@ export default function Home() {
                     <>{name}</>
                   )}
                 </div>
-                <div className="font-thin text-gray-400 pr-4 basis-1/3">
-                  {description}
+                <div className="basis-2/3">
+                  <div className="">{description}</div>
+                  {technologies && (
+                    <div className="mt-2 font-medium">
+                      <span className="">Technology used:</span>{' '}
+                      <span className="">{technologies.join(', ')}</span>
+                    </div>
+                  )}
                 </div>
-                {technologies && (
-                  <div className="font-thin text-gray-400 pr-4 basis-1/3">
-                    {technologies.join(', ')}
-                  </div>
-                )}
               </div>
             </li>
           ))}
