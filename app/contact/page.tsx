@@ -1,15 +1,16 @@
 export default function Contact() {
   return (
     <main className="container flex flex-col gap-4 md:py-16 md:flex-row">
-      <h2 className="text-2xl font-bold md:basis-1/2">
-        Let's work together to bring your ideas to life. <br /> Contact me
-        today!
+      <h2 className="text-2xl font-bold md:basis-1/3">
+        Let's work <span className=" bg-highlight-green">together</span> to
+        bring your ideas to life. <br /> <br />{' '}
+        <span className=" bg-highlight-green">Contact me</span> today!
       </h2>
       <form
         name="contact"
         method="POST"
         action="/success"
-        className="basis-1/2 mt-8 md:mt-0"
+        className="basis-2/3 mt-8 md:mt-0"
         data-netlify="true"
       >
         <input type="hidden" name="form-name" value="contact" />
