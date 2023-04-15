@@ -1,5 +1,5 @@
 'use client';
-
+import { ThemeSwitch } from '@/components/ThemeSwitch/ThemeSwitch';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
@@ -36,6 +36,9 @@ export default function Header() {
           Contact
         </CustomLink>
       </nav>
+      <div className="flex-grow">
+        <ThemeSwitch />
+      </div>
     </header>
   );
 }
