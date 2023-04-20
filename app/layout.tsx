@@ -5,11 +5,6 @@ import './globals.css';
 import Header from './header';
 import Footer from './footer';
 
-// export const metadata = {
-//   title: 'Frontend developer | Pawel Kaczmarek',
-//   description: 'Frontend developer | Pawel Kaczmarek'
-// };
-
 const roboto = Roboto({
   weight: '300',
   subsets: ['latin']

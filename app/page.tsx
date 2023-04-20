@@ -1,5 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import HighlightedText from '@/components/HighlightedText';
+
+export const metadata = {
+  title: 'Frontend developer | Pawel Kaczmarek',
+  description: 'Frontend developer | Pawel Kaczmarek'
+};
 
 type TimeLineItemType = {
   year: string;
@@ -97,24 +103,23 @@ export default function Home() {
           </h2>
         </div>
         <p className="py-1">
-          As a passionate{' '}
-          <span className=" bg-highlight-green">frontend developer</span>, I
-          enjoy the art of coding and creating innovative new projects. I
+          As a passionate <HighlightedText>frontend developer</HighlightedText>,
+          I enjoy the art of coding and creating innovative new projects. I
           believe that the key to growth as a developer is to constantly seek
           out new challenges and develop a broad range of skills. That's why, in
           addition to my expertise in frontend development, I have also expanded
           my knowledge to include{' '}
-          <span className=" bg-highlight-green">backend development</span>.
+          <HighlightedText>backend development</HighlightedText>.
         </p>
         <p className="py-1">
           When I'm not working, I like to explore new ideas in{' '}
-          <span className="bg-highlight-green">cloud-based solutions</span>,
-          honing my skills and staying up-to-date with the latest trends. Beyond
-          tech, I also have a love for literature and video games, and I make it
-          a priority to take time out of my busy schedule to enjoy these
-          hobbies. Whether I'm immersed in a great book or outside exploring
-          nature, I believe that finding balance between work and play is key to
-          staying motivated and engaged in all areas of life.
+          <HighlightedText>cloud-based solutions</HighlightedText>, honing my
+          skills and staying up-to-date with the latest trends. Beyond tech, I
+          also have a love for literature and video games, and I make it a
+          priority to take time out of my busy schedule to enjoy these hobbies.
+          Whether I'm immersed in a great book or outside exploring nature, I
+          believe that finding balance between work and play is key to staying
+          motivated and engaged in all areas of life.
         </p>
       </section>
       <section id="timeline" className="py-4">
