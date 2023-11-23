@@ -1,5 +1,11 @@
 'use client';
-import { useState, createContext, Dispatch, SetStateAction } from 'react';
+import {
+  useState,
+  createContext,
+  Dispatch,
+  SetStateAction,
+  useEffect
+} from 'react';
 import { Roboto } from 'next/font/google';
 import './globals.css';
 import Header from './header';
@@ -30,6 +36,12 @@ export default function RootLayout({
     theme,
     setTheme
   };
+
+  useEffect(() => {
+    const themeLS = localStorage.getItem('theme');
+    console.log(themeLS);
+    if (themeLS) setTheme(themeLS);
+  }, []);
 
   return (
     <ThemeContext.Provider value={themeContextValue}>

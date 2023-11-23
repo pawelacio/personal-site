@@ -8,8 +8,13 @@ export const ThemeSwitch = () => {
 
   const onThemeSwitch = () => {
     setTheme((prev) => {
-      if (prev === 'dark') return 'light';
-      else return 'dark';
+      if (prev === 'dark') {
+        localStorage.setItem('theme', 'light');
+        return 'light';
+      } else {
+        localStorage.setItem('theme', 'dark');
+        return 'dark';
+      }
     });
   };
 

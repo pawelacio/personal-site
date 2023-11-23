@@ -40,7 +40,11 @@ const timeline: TimeLineItemType[] = [
     description: 'Began first job as Junior Web Developer at Crafton company'
   },
   { year: '2020', description: 'Joined Cleeng as Frontend Developer' },
-  { year: '2022', description: 'Become AWS Certified Cloud Practitioner' }
+  { year: '2022', description: 'Become AWS Certified Cloud Practitioner' },
+  {
+    year: '2023',
+    description: 'Become AWS Certified Solutions Architect - Associate'
+  }
 ];
 
 const skills: SkillItemType[] = [
