@@ -1,46 +1,54 @@
 export default function Contact() {
   return (
-    <main className="container flex flex-col gap-4 md:py-16 md:flex-row">
-      <h2 className="text-xl font-bold mt-2 md:text-2xl md:basis-1/3">
-        Let's work <span className=" bg-highlight-green">together</span> to
-        bring your ideas to life. <br /> <br />{' '}
-        <span className=" bg-highlight-green">Contact me</span> today!
+    <main className="container flex flex-col gap-8 md:py-16 md:flex-row md:items-start">
+      <h2 className="text-xl font-bold mt-2 md:text-xl md:basis-1/3 md:pt-1">
+        Let's work{' '}
+        <span className="bg-highlight-green">together</span> to bring your
+        ideas to life.
+        <br />
+        <br />
+        <span className="bg-highlight-green">Contact me</span> today!
       </h2>
       <form
         name="contact"
         method="POST"
         action="/success"
-        className="basis-2/3 mt-8 md:mt-0"
+        className="basis-2/3"
         data-netlify="true"
       >
         <input type="hidden" name="form-name" value="contact" />
         <label className="block mb-4">
           <span className="block text-sm font-medium text-slate-700 dark:text-palenight-text">
-            Your Name:
+            Your Name
           </span>
           <input
             type="text"
             name="name"
+            required
+            autoComplete="name"
             className="mt-2 block w-full px-3 py-2 border rounded-md text-sm shadow-sm bg-white border-slate-300 dark:bg-palenight-background dark:border-palenight-text"
           />
         </label>
         <label className="block mb-4">
           <span className="block text-sm font-medium text-slate-700 dark:text-palenight-text">
-            Your Email:
+            Your Email
           </span>
           <input
             type="email"
             name="email"
+            required
+            autoComplete="email"
             className="mt-2 block w-full px-3 py-2 border rounded-md text-sm shadow-sm bg-white border-slate-300 dark:bg-palenight-background dark:border-palenight-text"
           />
         </label>
         <label className="block mb-4">
           <span className="block text-sm font-medium text-slate-700 dark:text-palenight-text">
-            Message:
+            Message
           </span>
           <textarea
             name="message"
             rows={5}
+            required
             className="mt-2 block w-full px-3 py-2 border rounded-md text-sm shadow-sm bg-white border-slate-300 dark:bg-palenight-background dark:border-palenight-text"
           ></textarea>
         </label>

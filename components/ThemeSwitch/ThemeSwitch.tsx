@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import Switch from '../Switch';
-import { ThemeContext } from '@/app/layout';
+import { ThemeContext } from '@/app/providers';
 import Image from 'next/image';
 
 export const ThemeSwitch = () => {

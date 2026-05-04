@@ -3,8 +3,8 @@ import Link from 'next/link';
 import HighlightedText from '@/components/HighlightedText';
 
 export const metadata = {
-  title: 'Frontend developer | Pawel Kaczmarek',
-  description: 'Frontend developer | Pawel Kaczmarek'
+  title: 'Senior Fullstack Engineer | Pawel Kaczmarek',
+  description: 'Senior Fullstack Engineer specializing in React, Next.js, Node.js, and AWS serverless solutions.'
 };
 
 type TimeLineItemType = {
@@ -44,17 +44,29 @@ const timeline: TimeLineItemType[] = [
   {
     year: '2023',
     description: 'Become AWS Certified Solutions Architect - Associate'
+  },
+  {
+    year: '2024',
+    description: 'Promoted to Senior Fullstack Engineer at Cleeng'
   }
 ];
 
 const skills: SkillItemType[] = [
   {
     category: 'Programming Languages',
-    skills: ['HTML', 'CSS', 'JavaScript', 'TypeScript']
+    skills: ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'Node.js']
   },
   {
-    category: 'Web Development Frameworks',
+    category: 'Frontend',
     skills: ['React', 'Next.js']
+  },
+  {
+    category: 'Backend & Serverless',
+    skills: ['AWS Lambda', 'Amazon API Gateway', 'Amazon DynamoDB', 'Amazon SQS', 'Serverless Framework', 'SST']
+  },
+  {
+    category: 'Cloud',
+    skills: ['AWS (Certified Cloud Practitioner, Solutions Architect Associate)']
   },
   {
     category: 'Design Tools',
@@ -65,28 +77,25 @@ const skills: SkillItemType[] = [
     skills: ['Git']
   },
   {
-    category: 'Testing Tools',
+    category: 'Testing',
     skills: ['Jest', 'Enzyme']
-  },
-  {
-    category: 'Other',
-    skills: ['AWS']
   }
 ];
 
 const projects: Project[] = [
   {
+    name: 'Hosted Customer Flows',
+    description:
+      'Suite of embeddable subscription widgets (Auth, Checkout, Account Management) that publishers integrate into their websites via a single script tag. Widgets are served from a Next.js app running on AWS ECS behind CloudFront CDN, with cross-domain iframe communication handled by a Vite-built embed script. Infrastructure managed with Terraform across multiple environments, deployed via GitHub Actions with per-PR preview URLs.',
+    url: 'https://developers.cleeng.com/docs/implementing-hosted-customer-flows',
+    technologies: ['Next.js', 'React', 'TypeScript', 'AWS ECS', 'CloudFront', 'Terraform', 'Docker', 'Vite']
+  },
+  {
     name: 'mediastore-sdk',
     description:
       'Component library for building a seamless checkout and account management process with Cleeng solution',
     url: 'https://github.com/Cleeng/mediastore-sdk',
-    technologies: ['React', 'Typescript', 'styled-components']
-  },
-  {
-    name: 'Covid dashboard',
-    description: 'Simple dashoard created to up to date with covid data',
-    url: 'https://covid-data-dashboard.netlify.app/',
-    technologies: ['React', 'Javascript', 'styled-components', 'd3']
+    technologies: ['React', 'TypeScript', 'styled-components']
   }
 ];
 
@@ -102,18 +111,20 @@ export default function Home() {
             height={100}
             className="block mx-auto h-24 rounded-full sm:mx-0 sm:shrink-0"
           />
-          <h2 className="text-3xl font-bold pl-4 md:text-6xl">
+          <h2 className="text-3xl font-bold pl-4 md:text-4xl">
             Hello I'm Pawel!
           </h2>
         </div>
         <p className="py-1">
-          As a passionate <HighlightedText>frontend developer</HighlightedText>,
-          I enjoy the art of coding and creating innovative new projects. I
-          believe that the key to growth as a developer is to constantly seek
-          out new challenges and develop a broad range of skills. That's why, in
-          addition to my expertise in frontend development, I have also expanded
-          my knowledge to include{' '}
-          <HighlightedText>backend development</HighlightedText>.
+          As a passionate{' '}
+          <HighlightedText>Senior Fullstack Engineer</HighlightedText>, I enjoy
+          the art of coding and building reliable, scalable products. I believe
+          that the key to growth as a developer is to constantly seek out new
+          challenges and develop a broad range of skills. Over the years I've
+          grown from frontend expertise into{' '}
+          <HighlightedText>backend development</HighlightedText> and{' '}
+          <HighlightedText>cloud architecture</HighlightedText> — working with
+          serverless solutions on AWS to build fast, cost-efficient APIs.
         </p>
         <p className="py-1">
           When I'm not working, I like to explore new ideas in{' '}
