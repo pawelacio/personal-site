@@ -1,5 +1,10 @@
 import Link from 'next/link';
 
+export const metadata = {
+  title: 'Message sent | Pawel Kaczmarek',
+  description: 'Your message has been sent successfully.'
+};
+
 export default function Contact() {
   return (
     <main className="container text-center md:py-16">

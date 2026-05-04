@@ -5,7 +5,14 @@ import HighlightedText from '@/components/HighlightedText';
 export const metadata = {
   title: 'Senior Fullstack Engineer | Pawel Kaczmarek',
   description:
-    'Senior Fullstack Engineer specializing in React, Next.js, Node.js, and AWS serverless solutions.'
+    'Senior Fullstack Engineer specializing in React, Next.js, Node.js, and AWS serverless solutions.',
+  openGraph: {
+    title: 'Senior Fullstack Engineer | Pawel Kaczmarek',
+    description:
+      'Senior Fullstack Engineer specializing in React, Next.js, Node.js, and AWS serverless solutions.',
+    url: 'https://pawelkaczmarek.pl',
+    images: [{ url: 'https://pawelkaczmarek.pl/me-sqr2.JPG' }]
+  }
 };
 
 type TimeLineItemType = {
@@ -194,7 +201,12 @@ export default function Home() {
               <div className="flex flex-row flex-nowrap">
                 <div className="font-medium text-gray-400 pr-4 basis-1/3">
                   {url ? (
-                    <Link href={url} className="underline">
+                    <Link
+                      href={url}
+                      className="underline"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       {name}
                     </Link>
                   ) : (

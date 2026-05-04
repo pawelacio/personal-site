@@ -1,3 +1,8 @@
+export const metadata = {
+  title: 'Contact | Pawel Kaczmarek',
+  description: 'Get in touch with Pawel Kaczmarek.'
+};
+
 export default function Contact() {
   return (
     <main className="container flex flex-col gap-8 md:py-16 md:flex-row md:items-start">
