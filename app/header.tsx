@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 type CustomLinkProps = {
-  children: string | JSX.Element;
+  children: string | React.JSX.Element;
   className: string;
   href: string;
 };

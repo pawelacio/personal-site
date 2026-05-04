@@ -1,11 +1,14 @@
 'use client';
 import { useEffect, useState } from 'react';
+import type { ReactNode } from 'react';
 
 type HighlightedTextProps = {
-  children: string | JSX.Element;
+  children: ReactNode;
 };
 
-const HighlightedText = ({ children }: HighlightedTextProps): JSX.Element => {
+const HighlightedText = ({
+  children
+}: HighlightedTextProps): React.JSX.Element => {
   const [isHighlighted, setIsHighlighted] = useState(false);
 
   useEffect(() => {

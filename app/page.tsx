@@ -190,7 +190,7 @@ export default function Home() {
         <h2 className="text-xl font-bold pb-4">Projects</h2>
         <ul>
           {projects.map(({ name, description, technologies, url }) => (
-            <li key="category" className="py-2">
+            <li key={name} className="py-2">
               <div className="flex flex-row flex-nowrap">
                 <div className="font-medium text-gray-400 pr-4 basis-1/3">
                   {url ? (
