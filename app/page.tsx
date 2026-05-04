@@ -4,7 +4,8 @@ import HighlightedText from '@/components/HighlightedText';
 
 export const metadata = {
   title: 'Senior Fullstack Engineer | Pawel Kaczmarek',
-  description: 'Senior Fullstack Engineer specializing in React, Next.js, Node.js, and AWS serverless solutions.'
+  description:
+    'Senior Fullstack Engineer specializing in React, Next.js, Node.js, and AWS serverless solutions.'
 };
 
 type TimeLineItemType = {
@@ -62,11 +63,20 @@ const skills: SkillItemType[] = [
   },
   {
     category: 'Backend & Serverless',
-    skills: ['AWS Lambda', 'Amazon API Gateway', 'Amazon DynamoDB', 'Amazon SQS', 'Serverless Framework', 'SST']
+    skills: [
+      'AWS Lambda',
+      'Amazon API Gateway',
+      'Amazon DynamoDB',
+      'Amazon SQS',
+      'Serverless Framework',
+      'SST'
+    ]
   },
   {
     category: 'Cloud',
-    skills: ['AWS (Certified Cloud Practitioner, Solutions Architect Associate)']
+    skills: [
+      'AWS (Certified Cloud Practitioner, Solutions Architect Associate)'
+    ]
   },
   {
     category: 'Design Tools',
@@ -88,7 +98,16 @@ const projects: Project[] = [
     description:
       'Suite of embeddable subscription widgets (Auth, Checkout, Account Management) that publishers integrate into their websites via a single script tag. Widgets are served from a Next.js app running on AWS ECS behind CloudFront CDN, with cross-domain iframe communication handled by a Vite-built embed script. Infrastructure managed with Terraform across multiple environments, deployed via GitHub Actions with per-PR preview URLs.',
     url: 'https://developers.cleeng.com/docs/implementing-hosted-customer-flows',
-    technologies: ['Next.js', 'React', 'TypeScript', 'AWS ECS', 'CloudFront', 'Terraform', 'Docker', 'Vite']
+    technologies: [
+      'Next.js',
+      'React',
+      'TypeScript',
+      'AWS ECS',
+      'CloudFront',
+      'Terraform',
+      'Docker',
+      'Vite'
+    ]
   },
   {
     name: 'mediastore-sdk',

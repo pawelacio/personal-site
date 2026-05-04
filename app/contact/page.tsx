@@ -2,9 +2,8 @@ export default function Contact() {
   return (
     <main className="container flex flex-col gap-8 md:py-16 md:flex-row md:items-start">
       <h2 className="text-xl font-bold mt-2 md:text-xl md:basis-1/3 md:pt-1">
-        Let's work{' '}
-        <span className="bg-highlight-green">together</span> to bring your
-        ideas to life.
+        Let's work <span className="bg-highlight-green">together</span> to bring
+        your ideas to life.
         <br />
         <br />
         <span className="bg-highlight-green">Contact me</span> today!
